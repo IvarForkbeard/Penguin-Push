@@ -1,0 +1,11 @@
+//draw boilerplate
+draw_self()
+draw_set_font(MaryKate)
+draw_text(128, 32, "Welcome to Penguin Push.")
+draw_text(128, 64, "Please choose a Theme.")
+draw_text(128, 600, "Arrow Keys to move")
+draw_text(128, 632, "Space to Undo")
+draw_text(128, 664, "Escape to Return Here")
+draw_text(128, 696, "Click Daniel for the Leaderboard")
+draw_text(128, 800, "Artwork by www.shaelina.com")
+draw_text(128, 832, "Music by www.youtube.com/@Wanye")
