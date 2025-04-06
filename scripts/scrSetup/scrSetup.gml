@@ -6,7 +6,7 @@ window_set_size(640, 960)
 draw_set_color(c_lime)
 draw_set_font(MaryKate)
 
-//constants
+//setup variables
 #macro GRIDSIZE 64
 #macro GAMENAME "Project Triclops"
 enum entity {
@@ -18,7 +18,8 @@ enum entity {
 }
 global.playgrid[0][0][0] = entity.wall
 global.levelToWin = 32
-global.themes = ["Bag", "Beaver", "Birb", "Neko", "Dumpster", "Moai", "Poop", "Skull", "Virus"]
+global.themes = ["Bag", "Beaver", "Birb", "Cat", "Dumpster", "Moai", "Poop", "Skull", "Virus"]
+global.playerName = "Playa"
 
 //
 //

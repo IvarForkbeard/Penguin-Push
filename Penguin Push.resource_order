@@ -22,7 +22,7 @@
   "ResourceOrderSettings":[
     {"name":"MaryKate","order":1,"path":"fonts/MaryKate/MaryKate.yy",},
     {"name":"objBeaver","order":1,"path":"objects/objBeaver/objBeaver.yy",},
-    {"name":"objBird","order":2,"path":"objects/objBird/objBird.yy",},
+    {"name":"objBirb","order":2,"path":"objects/objBirb/objBirb.yy",},
     {"name":"objCat","order":3,"path":"objects/objCat/objCat.yy",},
     {"name":"objDumpster","order":4,"path":"objects/objDumpster/objDumpster.yy",},
     {"name":"objLeaderBoard","order":8,"path":"objects/objLeaderBoard/objLeaderBoard.yy",},
