@@ -111,7 +111,7 @@
   "ioscodeinjection":"",
   "iosdelegatename":"",
   "iosplistinject":"",
-  "iosProps":true,
+  "iosProps":false,
   "iosSystemFrameworkEntries":[],
   "iosThirdPartyFrameworkEntries":[],
   "license":"",

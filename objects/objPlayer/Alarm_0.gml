@@ -1,8 +1,11 @@
 //check to see if player has finished
 if global.level >= global.levelToWin {
-    instance_create_layer(320, 700, "Text", objWinner)
-    LootLockerSetPlayerName("Justin Menu")
-    LootLockerSubmitScore("30505", "113")
+    if (global.totalSteps < global.leaderboardArray[global.theme][1]){
+        global.leaderboardArray[global.theme][0] = global.playerName
+        global.leaderboardArray[global.theme][1] = global.totalSteps
+        global.leaderboardArray[global.theme][2] = global.elapsedTime
+    }
+    room_goto(rmLeaderboard)
 }
 else {
     room_restart()

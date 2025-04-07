@@ -21,21 +21,4 @@ draw_text(320, 700, "Playa: " + global.playerName)
 draw_text(320, 740, "Levels Remaining: " + string(global.levelToWin - global.level))
 draw_text(320, 780, "Steps this level: " + string(now - 999))
 draw_text(320, 820, "Steps total: " + string(global.totalSteps))
-var minutes = string(int64(global.elapsedTime / 1800))
-if string_length(minutes) < 2 {
-    minutes = "0" + minutes
-}
-var seconds = string(int64(global.elapsedTime / 30) % 60)
-if string_length(seconds) < 2 {
-    seconds = "0" + seconds
-}
-var degrees = string((int64(global.elapsedTime / 2) % 30))
-if string_length(degrees) < 2 {
-    degrees = "0" + degrees
-}
-draw_text(320, 860, "Elapsed Time: " + minutes + ":" + seconds + ":" + degrees)
-
-//advance timer if still playing
-if global.level < global.levelToWin {
-    global.elapsedTime ++
-}
+draw_text(320, 860, "Elapsed Time: " + ticsToTime(global.elapsedTime))

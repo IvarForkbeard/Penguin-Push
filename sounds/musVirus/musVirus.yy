@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"musLeaderboard",
+  "%Name":"musVirus",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":246.85133,
-  "name":"musLeaderboard",
+  "duration":32.0,
+  "name":"musVirus",
   "parent":{
     "name":"Music",
     "path":"folders/Sounds/Music.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"musLeaderboard.ogg",
+  "soundFile":"musVirus.ogg",
   "type":0,
   "volume":1.0,
 }

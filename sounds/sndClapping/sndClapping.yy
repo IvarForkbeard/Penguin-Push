@@ -13,7 +13,7 @@
   "name":"sndClapping",
   "parent":{
     "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "path":"folders/Sounds/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
