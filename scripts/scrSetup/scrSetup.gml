@@ -1,6 +1,3 @@
-//leaderboard testing code
-LootLockerInitialize("dev_b1ce80cdd57e4a3495dfd55ae974ac84", "000.001", "true", "30505");
-
 //setup screen
 window_set_size(640, 900)
 draw_set_color(c_lime)

@@ -1,1 +1,0 @@
-global.playerName = keyboard_string

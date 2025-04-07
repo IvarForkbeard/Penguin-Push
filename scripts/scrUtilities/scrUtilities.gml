@@ -17,9 +17,6 @@ function ticsToTime(tics){
 }
 
 function themePress(icon){
-    //test code here:
-    global.startTime = current_time
-    //global.elapsedTime = 0
     global.theme = icon
     random_set_seed(global.theme)
     audio_stop_all()
@@ -61,5 +58,6 @@ function themePress(icon){
             object_set_sprite(objCrate, sprVirus)
         break
     }
+    global.startTime = current_time
     room_goto(rmGame)
 }
