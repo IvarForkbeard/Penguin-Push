@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Penguin Push",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -31,13 +31,14 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"Marykate-XLMj.ttf","CopyToMask":-1,"filePath":"datafiles","name":"Marykate-XLMj.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Penguin Push",
   "resources":[
@@ -63,7 +64,6 @@
     {"id":{"name":"rmLeaderboard","path":"rooms/rmLeaderboard/rmLeaderboard.yy",},},
     {"id":{"name":"rmSetup","path":"rooms/rmSetup/rmSetup.yy",},},
     {"id":{"name":"scrGrid","path":"scripts/scrGrid/scrGrid.yy",},},
-    {"id":{"name":"scrSetup","path":"scripts/scrSetup/scrSetup.yy",},},
     {"id":{"name":"scrUtilities","path":"scripts/scrUtilities/scrUtilities.yy",},},
     {"id":{"name":"musBag","path":"sounds/musBag/musBag.yy",},},
     {"id":{"name":"musBeaver","path":"sounds/musBeaver/musBeaver.yy",},},
@@ -71,6 +71,7 @@
     {"id":{"name":"musCat","path":"sounds/musCat/musCat.yy",},},
     {"id":{"name":"musDumpster","path":"sounds/musDumpster/musDumpster.yy",},},
     {"id":{"name":"musLeaderboard","path":"sounds/musLeaderboard/musLeaderboard.yy",},},
+    {"id":{"name":"musMoai","path":"sounds/musMoai/musMoai.yy",},},
     {"id":{"name":"musPoop","path":"sounds/musPoop/musPoop.yy",},},
     {"id":{"name":"musSkull","path":"sounds/musSkull/musSkull.yy",},},
     {"id":{"name":"musTheme","path":"sounds/musTheme/musTheme.yy",},},
@@ -79,7 +80,7 @@
     {"id":{"name":"sndMove","path":"sounds/sndMove/sndMove.yy",},},
     {"id":{"name":"sprBag","path":"sprites/sprBag/sprBag.yy",},},
     {"id":{"name":"sprBeaver","path":"sprites/sprBeaver/sprBeaver.yy",},},
-    {"id":{"name":"sprBird","path":"sprites/sprBird/sprBird.yy",},},
+    {"id":{"name":"sprBirb","path":"sprites/sprBirb/sprBirb.yy",},},
     {"id":{"name":"sprCat","path":"sprites/sprCat/sprCat.yy",},},
     {"id":{"name":"sprCrate","path":"sprites/sprCrate/sprCrate.yy",},},
     {"id":{"name":"sprDumpster","path":"sprites/sprDumpster/sprDumpster.yy",},},

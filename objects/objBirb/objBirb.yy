@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprBird",
-    "path":"sprites/sprBird/sprBird.yy",
+    "name":"sprBirb",
+    "path":"sprites/sprBirb/sprBirb.yy",
   },
   "spriteMaskId":null,
   "visible":true,

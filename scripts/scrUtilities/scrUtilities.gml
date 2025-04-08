@@ -31,7 +31,7 @@ function themePress(icon){
         break
         case 2:
             audio_play_sound(musBirb, 5, true)
-            object_set_sprite(objCrate, sprBird)
+            object_set_sprite(objCrate, sprBirb)
         break
         case 3:
             audio_play_sound(musCat, 5, true)
@@ -42,7 +42,7 @@ function themePress(icon){
             object_set_sprite(objCrate, sprDumpster)
         break
         case 5:
-            audio_play_sound(musTheme, 5, true)
+            audio_play_sound(musMoai, 5, true)
             object_set_sprite(objCrate, sprMoai)
         break
         case 6:

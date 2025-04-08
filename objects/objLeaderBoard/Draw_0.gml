@@ -1,6 +1,6 @@
 //draw leaderboard boilerplate
 draw_self()
-draw_set_color(c_lime)
+draw_set_colour(c_lime)
 draw_set_font(MaryKate)
 draw_text(256, 32, "Leaderboard")
 
