@@ -6,6 +6,7 @@ audio_play_sound(musTheme, 1, true)
 global.totalSteps = 0
 global.level = 0
 global.elapsedTime = 0
+global.cutoffTime = 15 //minutes before timer just stops counting
 
 //setup screen
 window_set_size(640, 900)
@@ -23,11 +24,10 @@ enum entity {
     crate = 15
 }
 global.playgrid[0][0][0] = entity.wall
-global.levelToWin = 3
+global.levelToWin = 1
 global.themes = ["Bag", "Beaver", "Birb", "Cat", "Dumpster", "Moai", "Poop", "Skull", "Virus"]
 global.playerName = "Playa"
 for (i = 0; i < 9; i ++){
-    global.leaderboardArray[i][0] = ""
-    global.leaderboardArray[i][1] = "99999"
-    global.leaderboardArray[i][2] = "99999"
+    global.leaderboardArray[i][0] = "Playa"
+    global.leaderboardArray[i][1] = "99999099999"
 }

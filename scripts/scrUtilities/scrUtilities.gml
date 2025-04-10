@@ -5,7 +5,7 @@ function ticsToTime(tics){
     if string_length(minutes) < 2 {
         minutes = "0" + minutes
     }
-    var seconds = string(int64(tics/ 30) % 60)
+    var seconds = string(int64(tics / 30) % 60)
     if string_length(seconds) < 2 {
         seconds = "0" + seconds
     }

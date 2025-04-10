@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":140.78258,
+  "duration":57.734966,
   "name":"musTheme",
   "parent":{
     "name":"Music",

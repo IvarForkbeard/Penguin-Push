@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":246.85133,
+  "duration":21.185307,
   "name":"musLeaderboard",
   "parent":{
     "name":"Music",
