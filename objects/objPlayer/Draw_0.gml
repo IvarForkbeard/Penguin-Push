@@ -17,7 +17,7 @@ for (i = 0; i < 10; i ++) {
 // Display info text
 window_set_caption(GAMENAME)
 draw_text(320, 660, "Theme: " + global.themes[global.theme])
-draw_text(320, 700, "Playa: " + global.playerName)
+draw_text(320, 700, "Player: " + global.playerName)
 draw_text(320, 740, "Levels Remaining: " + string(global.levelToWin - global.level))
 draw_text(320, 780, "Steps this level: " + string(now - 999))
 draw_text(320, 820, "Steps total: " + string(global.totalSteps))

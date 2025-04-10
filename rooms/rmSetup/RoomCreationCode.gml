@@ -28,6 +28,6 @@ global.levelToWin = 1
 global.themes = ["Bag", "Beaver", "Birb", "Cat", "Dumpster", "Moai", "Poop", "Skull", "Virus"]
 global.playerName = "Playa"
 for (i = 0; i < 9; i ++){
-    global.leaderboardArray[i][0] = "Playa"
-    global.leaderboardArray[i][1] = "000000000000"
+    global.leaderboardArray[i][0] = "Alan Smithee"
+    global.leaderboardArray[i][1] = "00000000000"
 }

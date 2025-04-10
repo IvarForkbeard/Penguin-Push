@@ -6,15 +6,15 @@ draw_text(256, 32, "Leaderboard")
 
 //draw the leaderboard array
 draw_text(64, textFirstLine / 2, "Theme")
-draw_text(192, textFirstLine / 2, "Playa")
+draw_text(192, textFirstLine / 2, "Player")
 draw_text(384, textFirstLine / 2, "Moves")
 draw_text(512, textFirstLine / 2, "Time")
 for (i = 0; i < 9; i ++){
     if global.leaderboardArray[i][0] = "" {
-        global.leaderboardArray[i][0] = "Playa"
+        global.leaderboardArray[i][0] = "Alan Smithee"
     }
     if global.leaderboardArray[i][1] = "" {
-        global.leaderboardArray[i][1] = "99999099999"
+        global.leaderboardArray[i][1] = "00000000000"
     }
     draw_text(64, textFirstLine + i * textSpacing, global.themes[i])
     draw_text(192, textFirstLine + i * textSpacing, global.leaderboardArray[i][0])
