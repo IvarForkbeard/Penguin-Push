@@ -29,5 +29,5 @@ global.themes = ["Bag", "Beaver", "Birb", "Cat", "Dumpster", "Moai", "Poop", "Sk
 global.playerName = "Playa"
 for (i = 0; i < 9; i ++){
     global.leaderboardArray[i][0] = "Playa"
-    global.leaderboardArray[i][1] = "99999099999"
+    global.leaderboardArray[i][1] = "000000000000"
 }
