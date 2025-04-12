@@ -1,5 +1,5 @@
 //as per Johannes instructions
-if !leaderboardBeenUpdated {
+if !leaderboardHasBeenUpdated {
     if global.LootLockerInitialized {
         LBSubmit(global.theme, global.totalSteps, global.elapsedTics)
         for (i = 0; i < 9; i ++){
@@ -10,6 +10,6 @@ if !leaderboardBeenUpdated {
                 global.leaderboardArray[i][1] = LLHighscoresTopScoreList()[0]
             }
         }
-        leaderboardBeenUpdated = true
+        leaderboardHasBeenUpdated = true
     }
 }

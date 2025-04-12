@@ -6,7 +6,8 @@ audio_play_sound(musTheme, 1, true)
 global.totalSteps = 0
 global.level = 0
 global.elapsedTics = 0
-global.cutoffTics = 99998 //minutes before timer just stops counting
+global.cutoffTics = 99999 //tics before timer just stops counting
+global.cutoffSteps = 99999 //steps before timer just stops counting
 
 //setup screen
 window_set_size(640, 900)
@@ -29,5 +30,5 @@ global.themes = ["Bag", "Beaver", "Birb", "Cat", "Dumpster", "Moai", "Poop", "Sk
 global.playerName = ""
 for (i = 0; i < 9; i ++){
     global.leaderboardArray[i][0] = "Alan Smithee"
-    global.leaderboardArray[i][1] = "00000000000"
+    global.leaderboardArray[i][1] = "999999099999"
 }

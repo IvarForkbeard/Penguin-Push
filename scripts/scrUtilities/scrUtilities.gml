@@ -86,9 +86,9 @@ function themeToID(aTheme){
 }
 
 function extractSteps(aSteps){
-    return 99999 - real(string_copy(aSteps, 1, 5))
+    return real(string_copy(aSteps, 2, 5))
 }
 
 function extractTics(aTics){
-    return 99999 - real(string_copy(aTics, 7, 5))
+    return real(string_copy(aTics, 8, 5))
 }
