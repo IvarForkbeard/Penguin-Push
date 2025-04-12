@@ -19,7 +19,7 @@ for (i = 0; i < 9; i ++){
     draw_text(64, textFirstLine + i * textSpacing, global.themes[i])
     draw_text(192, textFirstLine + i * textSpacing, global.leaderboardArray[i][0])
     draw_text(384, textFirstLine + i * textSpacing, extractSteps(global.leaderboardArray[i][1]))
-    draw_text(512, textFirstLine + i * textSpacing, ticsToTime(extractTime(global.leaderboardArray[i][1])))
+    draw_text(512, textFirstLine + i * textSpacing, ticsToTime(extractTics(global.leaderboardArray[i][1])))
 }
 
 //draw more boilerplate

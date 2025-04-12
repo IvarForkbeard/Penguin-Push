@@ -5,8 +5,8 @@ audio_play_sound(musTheme, 1, true)
 //reset global counters in case someone has aborted a level
 global.totalSteps = 0
 global.level = 0
-global.elapsedTime = 0
-global.cutoffTime = 15 //minutes before timer just stops counting
+global.elapsedTics = 0
+global.cutoffTics = 99998 //minutes before timer just stops counting
 
 //setup screen
 window_set_size(640, 900)
@@ -26,7 +26,7 @@ enum entity {
 global.playgrid[0][0][0] = entity.wall
 global.levelToWin = 1
 global.themes = ["Bag", "Beaver", "Birb", "Cat", "Dumpster", "Moai", "Poop", "Skull", "Virus"]
-global.playerName = "Playa"
+global.playerName = ""
 for (i = 0; i < 9; i ++){
     global.leaderboardArray[i][0] = "Alan Smithee"
     global.leaderboardArray[i][1] = "00000000000"

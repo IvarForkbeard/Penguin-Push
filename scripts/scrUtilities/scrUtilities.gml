@@ -1,26 +1,26 @@
 //convert tics to a time string
 
-function ticsToTime(tics){
-    var minutes = string(int64(tics / 1800))
+function ticsToTime(aTics){
+    var minutes = string(int64(aTics / 1800))
     if string_length(minutes) < 2 {
         minutes = "0" + minutes
     }
-    var seconds = string(int64(tics / 30) % 60)
+    var seconds = string(int64(aTics / 30) % 60)
     if string_length(seconds) < 2 {
         seconds = "0" + seconds
     }
-    var degrees = string((int64(tics / 2) % 30))
+    var degrees = string((int64(aTics / 2) % 30))
     if string_length(degrees) < 2 {
         degrees = "0" + degrees
     }
     return minutes + ":" + seconds + ":" + degrees
 }
 
-function themePress(icon){
-    global.theme = icon
+function themePress(aTheme){
+    global.theme = aTheme
     random_set_seed(global.theme)
     audio_stop_all()
-    switch(icon){
+    switch(aTheme){
         case 0:
             audio_play_sound(musBag, 5, true)
             object_set_sprite(objCrate, sprBag)
@@ -62,8 +62,8 @@ function themePress(icon){
     room_goto(rmGame)
 }
 
-function themeToID(sTheme){
-    switch (sTheme){
+function themeToID(aTheme){
+    switch (aTheme){
         case 0:
             return "30505"
         case 1:
@@ -85,10 +85,10 @@ function themeToID(sTheme){
     }
 }
 
-function extractSteps(input){
-    return 99999 - real(string_copy(input, 1, 5))
+function extractSteps(aSteps){
+    return 99999 - real(string_copy(aSteps, 1, 5))
 }
 
-function extractTime(input){
-    return 99999 - real(string_copy(input, 7, 5))
+function extractTics(aTics){
+    return 99999 - real(string_copy(aTics, 7, 5))
 }
