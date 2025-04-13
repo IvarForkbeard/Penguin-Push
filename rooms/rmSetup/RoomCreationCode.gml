@@ -17,6 +17,7 @@ draw_set_font(MaryKate)
 //setup variables
 #macro GRIDSIZE 64
 #macro GAMENAME "Penguin Push"
+global.levelToWin = 16
 enum entity {
     floor = 0,
     wall = 1,
@@ -25,7 +26,6 @@ enum entity {
     crate = 15
 }
 global.playgrid[0][0][0] = entity.wall
-global.levelToWin = 1
 global.themes = ["Bag", "Beaver", "Birb", "Cat", "Dumpster", "Moai", "Poop", "Skull", "Virus"]
 global.playerName = ""
 for (i = 0; i < 9; i ++){

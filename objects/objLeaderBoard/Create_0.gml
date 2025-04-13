@@ -8,31 +8,20 @@ textSpacing = 32
 
 //functions for leaderboard
 function LBSubmit(aTheme, aSteps, aTics){
+    if global.playerName = "" {
+        global.playerName = "Alan Smithee"
+    }
     LootLockerSetPlayerName(global.playerName)
     var scoreAsString = "9"
-    if aSteps < 10 {
-        scoreAsString += "0000" + string(aSteps)
-    } else if aSteps < 100 {
-        scoreAsString += "000" + string(aSteps)
-    } else if aSteps < 1000 {
-        scoreAsString += "00" + string(aSteps)
-    } else if aSteps < 10000 {
-        scoreAsString += "0" + string(aSteps)
-    } else if aSteps < 100000 {
-        scoreAsString += string(aSteps)
+    var stepsAsString = string(aSteps);
+    while string_length(stepsAsString) < 5 {
+        stepsAsString = "0" + stepsAsString;
     }
-    scoreAsString += "0"
-    if aTics < 10 {
-        scoreAsString += "0000" + string(aTics)
-    } else if aTics < 100 {
-        scoreAsString += "000" + string(aTics)
-    } else if aTics < 1000 {
-        scoreAsString += "00" + string(aTics)
-    } else if aTics < 10000 {
-        scoreAsString += "0" + string(aTics)
-    } else if aTics < 100000 {
-        scoreAsString += string(aTics)
+    var ticAsString = string(aTics);
+    while string_length(ticAsString) < 5 {
+        ticAsString = "0" + ticAsString;
     }
+    scoreAsString += stepsAsString + "0" + ticAsString;
     LootLockerSubmitScore(themeToID(aTheme), real(scoreAsString))
     global.leaderboardArray[aTheme][0] = global.playerName
     global.leaderboardArray[aTheme][1] = scoreAsString
