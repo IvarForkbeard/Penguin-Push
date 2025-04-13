@@ -9,17 +9,11 @@ draw_text(64, textFirstLine / 2, "Theme")
 draw_text(192, textFirstLine / 2, "Player")
 draw_text(384, textFirstLine / 2, "Moves")
 draw_text(512, textFirstLine / 2, "Time")
-for (i = 0; i < 9; i ++){
-    if global.leaderboardArray[i][0] = "" {
-        global.leaderboardArray[i][0] = "Alan Smithee"
-    }
-    if global.leaderboardArray[i][1] = "" {
-        global.leaderboardArray[i][1] = "900000000000"
-    }
+for (var i = 0; i < 9; i ++){
     draw_text(64, textFirstLine + i * textSpacing, global.themes[i])
     draw_text(192, textFirstLine + i * textSpacing, global.leaderboardArray[i][0])
     draw_text(384, textFirstLine + i * textSpacing, string_copy(global.leaderboardArray[i][1], 2, 5))
-    draw_text(512, textFirstLine + i * textSpacing, ticsToTime(real(string_copy(global.leaderboardArray[i][1], 8, 5))))
+    draw_text(512, textFirstLine + i * textSpacing, "999") //ticsToTime(real(string_copy(global.leaderboardArray[i][1], 8, 5))))
 }
 
 //draw more boilerplate

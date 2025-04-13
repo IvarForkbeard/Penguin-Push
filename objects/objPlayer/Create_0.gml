@@ -1,7 +1,9 @@
-//player pulls blocks around randomly to set up playable surface
-movesToScramble = 999
+//setup variables
 spacePause = 0
 currentMove = 0
+
+//player pulls blocks around randomly to set up playable surface
+movesToScramble = 999
 for (i = 0; i <= movesToScramble; i ++) {
     dx = 0
     dy = 0
@@ -19,13 +21,13 @@ for (i = 0; i <= movesToScramble; i ++) {
             dx = -1
         break
     }
-    focus = gridAt(global.playerX + dx, global.playerY + dy, 0)
+    var focus = gridAt(global.playerX + dx, global.playerY + dy, 0)
     if focus == entity.floor || focus == entity.target {
         gridChange(global.playerX, global.playerY, 0, -entity.player)
         global.playerX += dx
         global.playerY += dy
         gridChange(global.playerX, global.playerY, 0, entity.player)
-        focus2 = gridAt(global.playerX - dx * 2, global.playerY - dy * 2, 0)
+        var focus2 = gridAt(global.playerX - dx * 2, global.playerY - dy * 2, 0)
         if focus2 == entity.crate || focus2 == entity.crate + entity.target {
             gridChange(global.playerX - dx * 2, global.playerY - dy * 2, 0, -entity.crate)
             gridChange(global.playerX - dx, global.playerY - dy, 0, entity.crate)

@@ -10,6 +10,7 @@ global.cutoffTics = 99999 //tics before timer just stops counting
 global.cutoffSteps = 99999 //steps before timer just stops counting
 
 //setup screen
+window_set_caption(GAMENAME);
 window_set_size(640, 900)
 draw_set_color(c_lime)
 draw_set_font(MaryKate)
@@ -17,7 +18,7 @@ draw_set_font(MaryKate)
 //setup variables
 #macro GRIDSIZE 64
 #macro GAMENAME "Penguin Push"
-global.levelToWin = 16
+global.levelToWin = 3
 enum entity {
     floor = 0,
     wall = 1,
@@ -27,8 +28,9 @@ enum entity {
 }
 global.playgrid[0][0][0] = entity.wall
 global.themes = ["Bag", "Beaver", "Birb", "Cat", "Dumpster", "Moai", "Poop", "Skull", "Virus"]
-global.playerName = ""
-for (i = 0; i < 9; i ++){
-    global.leaderboardArray[i][0] = "Alan Smithee"
+global.playerName = "Alan Smithee"
+keyboard_string = global.playerName
+for (var i = 0; i < 9; i ++){
+    global.leaderboardArray[i][0] = global.playerName
     global.leaderboardArray[i][1] = "999999099999"
 }

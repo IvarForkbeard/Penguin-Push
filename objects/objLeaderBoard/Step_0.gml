@@ -1,15 +1,13 @@
-//as per Johannes instructions
-if !leaderboardHasBeenUpdated {
+//popular leaderboardArray from LootLocker as data becomes available
+if stepThroughLootLocker < 9 {
     if global.LootLockerInitialized {
-        LBSubmit(global.theme, global.totalSteps, global.elapsedTics)
-        for (i = 0; i < 9; i ++){
-            if LLHighscoresTopNamesList()[0] != " " {
-                global.leaderboardArray[i][0] = LLHighscoresTopNamesList()[0]
-            }
-            if LLHighscoresTopScoreList()[0] != " " {
-                global.leaderboardArray[i][1] = LLHighscoresTopScoreList()[0]
-            }
-        }
-        leaderboardHasBeenUpdated = true
+        LootLockerGetHighscoresTop(themeToID(stepThroughLootLocker), "1")
+        var leaderboardName = LLHighscoresTopNamesList()[0]
+        var leaderboardScore = LLHighscoresTopScoreList()[0]
+        global.leaderboardArray[stepThroughLootLocker][0] = leaderboardName
+        global.leaderboardArray[stepThroughLootLocker][1] = string(leaderboardScore)
+        stepThroughLootLocker ++
+        LootLockerReset()
+        LootLockerInitialize(leaderboardAPI, "000.001", "true", themeToID(stepThroughLootLocker))
     }
 }
