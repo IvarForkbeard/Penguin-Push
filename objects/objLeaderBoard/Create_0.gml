@@ -23,10 +23,12 @@ function LBSubmit(aTheme, aSteps, aTics){
         ticAsString = "0" + ticAsString;
     }
     scoreAsString += stepsAsString + ticAsString;
-    LootLockerSubmitScore(themeToID(aTheme), real(scoreAsString))
-    global.leaderboardArray[aTheme][0] = global.playerName
-    global.leaderboardArray[aTheme][1] = scoreAsString
+    if real(scoreAsString) < real(global.leaderboardArray[aTheme][1]){
+        LootLockerSubmitScore(themeToID(aTheme), real(scoreAsString))
+        global.leaderboardArray[aTheme][0] = global.playerName
+        global.leaderboardArray[aTheme][1] = scoreAsString
+    }
 }
 LootLockerTurnOffAutoRefresh()
-LootLockerInitialize(leaderboardAPI, "000.001", "true", themeToID(0))
+LootLockerInitialize(leaderboardAPI, "000.001", "true", themeToID(global.theme))
 LBSubmit(global.theme, global.totalSteps, global.elapsedTics)

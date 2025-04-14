@@ -39,6 +39,7 @@
     {"name":"objWinner","order":6,"path":"objects/objWinner/objWinner.yy",},
     {"name":"rmLeaderboard","order":2,"path":"rooms/rmLeaderboard/rmLeaderboard.yy",},
     {"name":"rmSetup","order":1,"path":"rooms/rmSetup/rmSetup.yy",},
+    {"name":"rmTitle","order":3,"path":"rooms/rmTitle/rmTitle.yy",},
     {"name":"scrGrid","order":2,"path":"scripts/scrGrid/scrGrid.yy",},
     {"name":"scrUtilities","order":3,"path":"scripts/scrUtilities/scrUtilities.yy",},
     {"name":"musBag","order":8,"path":"sounds/musBag/musBag.yy",},

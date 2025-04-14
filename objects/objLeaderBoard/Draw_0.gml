@@ -1,3 +1,6 @@
+//LootLocker Testing
+draw_text(64,700, LLHighscoresTopScoreList()[0]) 
+
 //draw leaderboard boilerplate
 draw_self()
 draw_set_colour(c_lime)
@@ -13,7 +16,7 @@ for (var i = 0; i < 9; i ++){
     draw_text(64, textFirstLine + i * textSpacing, global.themes[i])
     draw_text(192, textFirstLine + i * textSpacing, global.leaderboardArray[i][0])
     draw_text(384, textFirstLine + i * textSpacing, string_copy(global.leaderboardArray[i][1], 2, 5))
-    draw_text(512, textFirstLine + i * textSpacing, "999") //ticsToTime(real(string_copy(global.leaderboardArray[i][1], 8, 5))))
+//    draw_text(512, textFirstLine + i * textSpacing, ticsToTime(real(string_copy(global.leaderboardArray[i][1], 8, 5))))
 }
 
 //draw more boilerplate

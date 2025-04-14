@@ -1,7 +1,3 @@
-//audio
-audio_stop_all()
-audio_play_sound(musTheme, 1, true)
-
 //reset global counters in case someone has aborted a level
 global.totalSteps = 0
 global.level = 0
@@ -34,3 +30,9 @@ for (var i = 0; i < 9; i ++){
     global.leaderboardArray[i][0] = global.playerName
     global.leaderboardArray[i][1] = "999999099999"
 }
+
+//audio
+audio_stop_all()
+audio_play_sound(musTheme, 1, true)
+
+room_goto(rmTitle)

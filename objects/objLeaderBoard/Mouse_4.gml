@@ -1,1 +1,1 @@
-room_goto(rmSetup)
+room_goto(rmTitle)
