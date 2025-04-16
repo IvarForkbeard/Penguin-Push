@@ -92,7 +92,6 @@
     {"id":{"name":"sprTarget","path":"sprites/sprTarget/sprTarget.yy",},},
     {"id":{"name":"sprVirus","path":"sprites/sprVirus/sprVirus.yy",},},
     {"id":{"name":"sprWall","path":"sprites/sprWall/sprWall.yy",},},
-    {"id":{"name":"sprWinner","path":"sprites/sprWinner/sprWinner.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

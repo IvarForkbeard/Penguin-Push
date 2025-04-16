@@ -1,10 +1,3 @@
-//reset global counters in case someone has aborted a level
-global.totalSteps = 0
-global.level = 0
-global.elapsedTics = 0
-global.cutoffTics = 99999 //tics before timer just stops counting
-global.cutoffSteps = 99999 //steps before timer just stops counting
-
 //setup screen
 window_set_caption(GAMENAME);
 window_set_size(640, 900)
@@ -14,7 +7,7 @@ draw_set_font(MaryKate)
 //setup variables
 #macro GRIDSIZE 64
 #macro GAMENAME "Penguin Push"
-global.levelToWin = 3
+global.levelToWin = 1 //level required to win the game
 enum entity {
     floor = 0,
     wall = 1,
@@ -30,9 +23,5 @@ for (var i = 0; i < 9; i ++){
     global.leaderboardArray[i][0] = global.playerName
     global.leaderboardArray[i][1] = "999999099999"
 }
-
-//audio
-audio_stop_all()
-audio_play_sound(musTheme, 1, true)
 
 room_goto(rmTitle)

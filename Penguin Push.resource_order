@@ -64,6 +64,5 @@
     {"name":"sprTarget","order":3,"path":"sprites/sprTarget/sprTarget.yy",},
     {"name":"sprVirus","order":8,"path":"sprites/sprVirus/sprVirus.yy",},
     {"name":"sprWall","order":2,"path":"sprites/sprWall/sprWall.yy",},
-    {"name":"sprWinner","order":6,"path":"sprites/sprWinner/sprWinner.yy",},
   ],
 }

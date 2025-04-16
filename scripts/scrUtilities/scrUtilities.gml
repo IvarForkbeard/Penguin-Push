@@ -62,29 +62,6 @@ function themePress(aTheme){
     room_goto(rmGame)
 }
 
-function themeToID(aTheme){
-    switch (aTheme){
-        case 0:
-            return "30505"
-        case 1:
-            return "30608"
-        case 2:
-            return "30609"
-        case 3:
-            return "30610"
-        case 4:
-            return "30611"
-        case 5:
-            return "30612"
-        case 6:
-            return "30613"
-        case 7:
-            return "30614"
-        case 8:
-            return "30615"
-    }
-}
-
 function extractSteps(aSteps){
     return real(string_copy(aSteps, 2, 5))
 }

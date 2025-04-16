@@ -17,7 +17,7 @@ function gridChange(x, y, z, thing) {
 function gridDraw () {
     for (var i = 0; i < 10; i++){
         for (var j = 0; j < 10;  j++){
-            draw_text(32 + i * 32, 32 + j * 32, gridAt(i, j, currentMove))
+            draw_text(32 + i * 32, 32 + j * 32, gridAt(i, j, global.totalSteps))
         }
     }
 }
